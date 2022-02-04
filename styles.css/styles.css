@@ -1,0 +1,176 @@
+:root {
+  --main-color: #757575;
+  --accent-color: #2196f3;
+  --title-color: #212121;
+}
+body {
+  background-color: #ffffff;
+  color: var(--title-color);
+  font-family: "Roboto", sans-serif;
+}
+/* main page */
+.hero,
+.contacts {
+  background: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.caption {
+  visibility: hidden;
+}
+.advantages {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.description {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.worker {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.about-worker {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+/* components starts */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+span {
+  color: var(--accent-color);
+}
+/* logo nav */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.main-nav {
+  color: var(--accent-color);
+}
+.nav {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.nav:hover,
+.nav:focus {
+  color: var(--accent-color);
+}
+.communication-mail {
+  color: var(--accent-color);
+}
+.communication {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.communication:hover,
+.communication:focus {
+  color: var(--accent-color);
+}
+/* logo footer */
+.secondary-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: white;
+}
+.link {
+  font-style: normal;
+  color: #ffffff;
+}
+/* adress */
+.contacts-item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts-item:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+/* components end */
+/* portfolio page */
+.carousel-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  cursor: pointer;
+}
+.carousel-btn:hover,
+.carousel-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.carousel-total {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.projects-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.type-projects {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
