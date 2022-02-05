@@ -16,16 +16,17 @@ body {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 .modal-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
@@ -40,33 +41,33 @@ body {
 .advantages {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .description {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .worker {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .about-worker {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -86,7 +87,7 @@ span {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
@@ -94,8 +95,9 @@ span {
   color: var(--accent-color);
 }
 .nav {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
@@ -107,8 +109,9 @@ span {
   color: var(--accent-color);
 }
 .communication {
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
@@ -121,7 +124,7 @@ span {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: white;
 }
@@ -133,7 +136,7 @@ span {
 .contacts-item {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -144,14 +147,16 @@ span {
 /* components end */
 /* portfolio page */
 .carousel-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
   cursor: pointer;
 }
+
 .carousel-btn:hover,
 .carousel-btn:focus {
   background-color: var(--accent-color);
@@ -170,7 +175,7 @@ span {
 }
 .type-projects {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
