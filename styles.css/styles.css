@@ -10,8 +10,7 @@ body {
 }
 h1,
 h2,
-h3,
-h4 {
+h3 {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -33,7 +32,7 @@ p {
 }
 /* main page */
 .hero {
-  padding: 200px 452px;
+  padding: 200px 0 200px 0;
 }
 .hero,
 .contacts {
@@ -73,7 +72,7 @@ p {
   cursor: pointer;
 }
 .main-advantages {
-  padding: 94px 215px 94px 215px;
+  padding: 94px 0 94px 0;
 }
 .caption {
   visibility: hidden;
@@ -103,7 +102,7 @@ p {
   color: var(--main-color);
 }
 .holder {
-  padding: 0px 215px 94px 215px;
+  padding: 0 0 94px 0;
 }
 .title {
   margin-bottom: 50px;
@@ -125,7 +124,7 @@ p {
   width: 370px;
 }
 .about-team {
-  padding: 94px 215px;
+  padding: 94px 0 94px 0;
   background-color: #f5f4fa;
 }
 .worker {
@@ -275,7 +274,7 @@ span {
   color: #ffffff;
 }
 .contacts {
-  padding: 60px 1154px 60px;
+  padding: 60px 0 60px 0;
 }
 .contacts-item {
   width: 231px;
@@ -298,7 +297,7 @@ span {
 
 /* portfolio page */
 .portfolio {
-  padding: 94px 215px;
+  padding: 94px 0 94px 0;
 }
 .type-of-button {
   display: flex;
