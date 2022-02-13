@@ -116,16 +116,40 @@ p {
 .gallery {
   display: flex;
 }
+.gallery-list {
+  flex-basis: calc((100% - 90px) / 3);
+}
+
 .img:not(:last-child) {
   margin-right: 30px;
 }
-.gallery-list {
-  display: block;
-  width: 370px;
-}
+
 .about-team {
   padding: 94px 0 94px 0;
   background-color: #f5f4fa;
+}
+
+.team {
+  display: flex;
+}
+.team-list {
+  flex-basis: calc((100% - 120px) / 4);
+
+  border: 1px solid #eeeeee;
+  border-radius: 0 0 4px 4px;
+
+  background-color: #ffffff;
+}
+.team-list:not(:last-child) {
+  margin-right: 30px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.proffesion {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .worker {
   margin-bottom: 10px;
@@ -136,30 +160,11 @@ p {
   letter-spacing: 0.03em;
 }
 .about-worker {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-}
-.team {
-  display: flex;
-}
-.team-list {
-  width: 270px;
-  min-height: 368px;
-  border: 1px solid #eeeeee;
-  border-radius: 0 0 4px 4px;
-
-  background-color: #ffffff;
-}
-.team-list:not(:last-child) {
-  margin-right: 30px;
-}
-.pic {
-  display: block;
-  margin-bottom: 30px;
 }
 /* components starts */
 a {
