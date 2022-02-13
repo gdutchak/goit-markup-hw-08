@@ -116,13 +116,19 @@ p {
 }
 .gallery {
   display: flex;
+  flex-wrap: wrap;
 }
 .gallery-list {
   flex-basis: calc((100% - 90px) / 3);
 }
-
-.img:not(:last-child) {
+.img {
   margin-right: 30px;
+}
+.img:nth-child(3n) {
+  margin-right: 0;
+}
+.img:nth-child(-3 + n) {
+  margin-bottom: 0;
 }
 
 .about-team {
@@ -132,17 +138,19 @@ p {
 
 .team {
   display: flex;
+  flex-wrap: wrap;
 }
 .team-list {
   flex-basis: calc((100% - 120px) / 4);
+  margin-right: 30px;
 
   border: 1px solid #eeeeee;
   border-radius: 0 0 4px 4px;
 
   background-color: #ffffff;
 }
-.team-list:not(:last-child) {
-  margin-right: 30px;
+.team-list:nth-child(4n) {
+  margin-right: 0;
 }
 img {
   width: 100%;
@@ -234,9 +242,7 @@ span {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-/* .communication:not(:last-child) {
-  margin-left: auto;
-} */
+
 .communication-mail {
   color: var(--accent-color);
 }
