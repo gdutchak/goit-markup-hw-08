@@ -14,7 +14,7 @@
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css/styles.css">
-</head>
+    </head>
 
 <body>
     <!-- шапка сайта -->
@@ -56,7 +56,15 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="modal-btn">Заказать услугу</button>
+            <button type="button" class="modal-btn" data-modal-open>Заказать услугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <svg class="modal-icon" data-modal-close>
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </div>
+            </div>
+            
             </div>
         </section>
         <!-- наши преимущества -->
@@ -119,13 +127,22 @@
             <ul class="gallery">
                 <li class="img">
                     <img src="./images/img1.jpg" alt="набор кода на клавиатуре, отображаемый на планшете" width="370" class="gallery-list">
+                    <div class="gallery-items">
+                    <p class="gallery-description">Десктопные приложения</p>
+                    </div>
                 </li>
                 <li class="img">
                     <img src="./images/img2.jpg" alt="человек работает на ноутбуке, в руках держит телефон"
                         width="370" class="gallery-list">
+                    <div class="gallery-items">
+                    <p class="gallery-description">Мобильные приложения</p>
+                    </div>
                 </li>
                 <li class="img">
                     <img src="./images/img3.jpg" alt="на планшете изображена цветовая палитра" width="370" class="gallery-list">
+                    <div class="gallery-items">
+                    <p class="gallery-description">Дизайнерские решения</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -394,6 +411,7 @@
             </div>
             </div>
     </footer>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
