@@ -20,31 +20,31 @@
     <!-- шапка сайта -->
     <header>
         <div class="container head">
-         <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
+         <a href="" lang="en" class="logo logo--top"><span>Web</span>Studio</a>
             <nav>
-            <ul class="main-nav-list">
-                <li class="main-nav-item">
-                    <a href="index.html" class="nav">Студия</a>
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="index.html" class="nav-list__link">Студия</a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="portfolio.html" class="nav main-nav">Портфолио</a>
+                <li class="nav-list__item">
+                    <a href="portfolio.html" class="nav-list__link nav-list__link--focused">Портфолио</a>
                 </li>
-                <li class="main-nav-item">
-                    <a href="" class="nav">Контакты</a>
+                <li class="nav-list__item">
+                    <a href="" class="nav-list__link">Контакты</a>
                 </li>
             </ul>
         </nav>
         <ul class="communication-list">
-            <li class="communication-item">
-                <a href="mailtoinfo@devstudio.com" class="communication">
-                    <svg class="mail">
+            <li class="communication-list__item">
+                <a href="mailtoinfo@devstudio.com" class="communication-list__link">
+                    <svg class="communication-list__mail">
                         <use href="./images/icons.svg#icon-mail"></use>
                     </svg>
                     info@devstudio.com</a>
             </li>
-            <li class="communication-item">
-                <a href="tel:+380961111111" class="communication">
-                    <svg class="phone">
+            <li class="communication-list__item">
+                <a href="tel:+380961111111" class="communication-list__link">
+                    <svg class="communication-list__phone">
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -57,185 +57,185 @@
                 <div class="container">
                 <!-- скрытый заголовок -->
                 <h1 class="visually-hidden">Примеры работ</h1>
-                <ul class="type-of-button">
-                    <li class="list-of-button">
-                        <button type="button" class="carousel-btn carousel-total">Все</button>
+                <ul class="btn-list">
+                    <li class="btn-list__name">
+                        <button type="button" class="btn-list__item btn-list__text btn-list__item--active">Все</button>
                     </li>
-                    <li class="list-of-button">
-                        <button type="button" class="carousel-btn">Веб-сайты</button>
+                    <li class="btn-list__name">
+                        <button type="button" class="btn-list__item btn-list__text">Веб-сайты</button>
                     </li>
-                    <li class="list-of-button">
-                        <button type="button" class="carousel-btn">Приложения</button>
+                    <li class="btn-list__name">
+                        <button type="button" class="btn-list__item btn-list__text">Приложения</button>
                     </li>
-                    <li class="list-of-button">
-                        <button type="button" class="carousel-btn">Дизайн</button>
+                    <li class="btn-list__name">
+                        <button type="button" class="btn-list__item btn-list__text">Дизайн</button>
                     </li>
-                    <li class="list-of-button">
-                        <button type="button" class="carousel-btn">Маркетинг</button>
+                    <li class="btn-list__name">
+                        <button type="button" class="btn-list__item btn-list__text">Маркетинг</button>
                     </li>
                 </ul>
-                <ul class="main-sheet">
-                    <li class="work-sheet">
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
+                <ul class="portfolio__types">
+                    <li class="products">
+                        <a href="" class="products__link">
+                            <div class="products__item">
                             <img src="./images/img01.jpg" alt="три информационных карточки о сотрудниках компании
-                        " width="370" class="work-img">
-                        <div class="animation">
-                            <p class="animation-text">
+                        " width="370" class="products__img">
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 class="projects-name">Технокряк</h2>
-                        <p class="type-projects">Веб-сайт</p>
+                        <div class="products__desc">
+                        <h2 class="products__name">Технокряк</h2>
+                        <p class="products__type">Веб-сайт</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                            <div class="products__item">
                         <img src="./images/img02.jpg" alt="два баскетболиста борются за мяч
-                        " width="370" class="work-img">
-                        <div class="animation">
-                            <p class="animation-text">
+                        " width="370" class="products__img">
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 class="projects-name">Постер New Orlean vs Golden Star</h2>
-                        <p class="type-projects">Дизайн</p>
+                        <div class="products__desc">
+                        <h2 class="products__name">Постер New Orlean vs Golden Star</h2>
+                        <p class="products__type">Дизайн</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
-                        <img src="./images/img03.jpg" alt="логотип ресторана" width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                            <div class="products__item">
+                        <img src="./images/img03.jpg" alt="логотип ресторана" width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 class="projects-name">Ресторан Seafood</h2>
-                        <p class="type-projects">Приложение</p>
+                        <div class="products__desc">
+                        <h2 class="products__name">Ресторан Seafood</h2>
+                        <p class="products__type">Приложение</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                            <div class="products__item">
                         <img src="./images/img04.jpg" alt="черные наушники
-                        " width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                        " width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                         <div class="projects-desc">
-                        <h2 class="projects-name">Проект Prime</h2>
-                        <p class="type-projects">Маркетинг</p>
+                         <div class="products__desc">
+                        <h2 class="products__name">Проект Prime</h2>
+                        <p class="products__type">Маркетинг</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
-                        <img src="./images/img05.jpg" alt="две подарочные коробки" width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                            <div class="products__item">
+                        <img src="./images/img05.jpg" alt="две подарочные коробки" width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 class="projects-name">Проект Boxes</h2>
-                        <p class="type-projects">Приложение</p>
+                        <div class="products__desc">
+                        <h2 class="products__name">Проект Boxes</h2>
+                        <p class="products__type">Приложение</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
-                        <img src="./images/img06.jpg" alt="монитор с веб-сайтом" width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                            <div class="products__item">
+                        <img src="./images/img06.jpg" alt="монитор с веб-сайтом" width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 lang="en" class="projects-name">Inspiration has no Borders</h2>
-                        <p class="type-projects">Веб-сайт</p>
+                        <div class="products__desc">
+                        <h2 lang="en" class="products__name">Inspiration has no Borders</h2>
+                        <p class="products__type">Веб-сайт</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                            <div class="animation-items">
-                        <img src="./images/img07.jpg" alt="развернутый журнал" width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                            <div class="products__item">
+                        <img src="./images/img07.jpg" alt="развернутый журнал" width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 class="projects-name">Издание Limited Edition</h2>
-                        <p class="type-projects">Дизайн</p>
+                        <div class="products__desc">
+                        <h2 class="products__name">Издание Limited Edition</h2>
+                        <p class="products__type">Дизайн</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet">
-                        <a href="" class="work-sheet-item"> 
-                        <div class="animation-items">
-                            <img src="./images/img08.jpg" alt="бирка с логотипом" width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                    <li class="products">
+                        <a href="" class="products__link"> 
+                        <div class="products__item">
+                            <img src="./images/img08.jpg" alt="бирка с логотипом" width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 class="projects-name">Проект LAB</h2>
-                        <p class="type-projects">Маркетинг</p>
+                        <div class="products__desc">
+                        <h2 class="products__name">Проект LAB</h2>
+                        <p class="products__type">Маркетинг</p>
                         </div>
                         </a>
                     </li>
-                    <li class="work-sheet"> 
-                        <a href="" class="work-sheet-item">
-                        <div class="animation-items">
-                            <img src="./images/img09.jpg" alt="реклама приложения на ноутбуке" width="370" class="work-img"> 
-                        <div class="animation">
-                            <p class="animation-text">
+                    <li class="products"> 
+                        <a href="" class="products__link">
+                        <div class="products__item">
+                            <img src="./images/img09.jpg" alt="реклама приложения на ноутбуке" width="370" class="products__img"> 
+                        <div class="products__animation">
+                            <p class="products__text">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                                 получить
                                 исчерпывающие сведения о компании или частном лице.
                             </p>
                         </div>
                         </div>
-                        <div class="projects-desc">
-                        <h2 lang="en" class="projects-name">Growing Business</h2>
-                        <p class="type-projects">Приложение</p>
+                        <div class="products__desc">
+                        <h2 lang="en" class="products__name">Growing Business</h2>
+                        <p class="products__type">Приложение</p>
                         </div>
                         </a>
                     </li>
@@ -244,66 +244,64 @@
                 </div>
             </section>
         </main>
-        <!-- подвал сайта -->
+        <!-- пiдвал сайтy -->
         <footer class="contacts">
             <div class="container footer-content">
-                <div class="footer-sheet">
-                    <div class="icon">
-                        <a href="" class="secondary-logo"><span>Web</span>Studio</a>
-                    </div>
-                    <address>
+                <div class="footer">
+                        <a href="" class="logo logo--footer"><span>Web</span>Studio</a>
+                     <address>
                         <ul>
-                            <li class="adress-item">
+                            <li class="footer__adress">
                                 <a href="https://goo.gl/maps/dzJ4AE8U17EAdA616" target="_blank" rel="noopener noreferrer"
-                                    class="link">г. Киев, пр-т Леси Украинки, 26</a>
+                                    class="footer__link">г. Киев, пр-т Леси Украинки, 26</a>
                             </li>
-                            <li class="adress-item">
-                                <a href="mailto:info@example.com" class="contacts-item">info@example.com</a>
+                            <li class="footer__adress">
+                                <a href="mailto:info@example.com" class="footer__link footer__link--accent">info@example.com</a>
                             </li>
-                            <li class="adress-item">
-                                <a href="tel+380991111111" class="contacts-item">+38 099 111 11 11</a>
+                            <li class="footer__adress">
+                                <a href="tel+380991111111" class="footer__link footer__link--accent">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div>
-                    <p class="join-to-social"><strong>присоединяйтесь</strong></p>
-                    <ul class="footer-social">
+                <div class="social-list">
+                    <b class="join-to-social">присоединяйтесь</b>
+                    <ul class="social-sheet social-sheet--actived">
                         <li>
-                            <a href="" class="social-links">
-                                <svg class="icons-footer" width="20" height="20">
+                            <a href="" class="social-sheet__link social-sheet__link--actived">
+                                <svg class="social-sheet__icons social-sheet__icons--actived" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social-links">
-                                <svg class="icons-footer" width="20" height="20">
+                            <a href="" class="social-sheet__link social-sheet__link--actived">
+                                <svg class="social-sheet__icons social-sheet__icons--actived" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social-links">
-                                <svg class="icons-footer" width="20" height="20">
+                            <a href="" class="social-sheet__link social-sheet__link--actived">
+                                <svg class="social-sheet__icons social-sheet__icons--actived" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="" class="social-links">
-                                <svg class="icons-footer" width="20" height="20">
+                            <a href="" class="social-sheet__link social-sheet__link--actived">
+                                <svg class="social-sheet__icons social-sheet__icons--actived" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <form autocomplete="off">
-                    <label for="email" class="follow">Подпишитесь на рассылку</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail" class="field-email">
-                    <button type="submit" class="btn-submit">
-                        <span class="btn-submit-text">Подписаться</span>
+                <form autocomplete="off" class="footer-form">
+                    <label for="email" class="footer-form__label">Подпишитесь на рассылку</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="footer-form__email">
+                    <button type="submit" class="btn btn--footer">
+                        <span class="btn__text btn__text--footer">Подписаться</span>
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
