@@ -1,16 +1,7 @@
-%logo {
-  display: block;
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
 %btn {
   width: 200px;
   height: 50px;
-  background: var(--accent-color);
+  background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   border-radius: 4px;
@@ -46,12 +37,8 @@
   height: 44px;
 
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-%social-sheet__icons {
-  fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 %btn__text {
   display: block;
   font-weight: 700;
@@ -60,4 +47,23 @@
   letter-spacing: 0.06em;
   text-align: center;
   color: #ffffff;
+}
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+%title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }

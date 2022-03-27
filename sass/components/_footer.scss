@@ -1,0 +1,11 @@
+.contacts {
+  padding: 60px 0 60px 0;
+  background: #2f303a;
+}
+.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+.footer:not(:last-child) {
+  margin-right: 70px;
+}
