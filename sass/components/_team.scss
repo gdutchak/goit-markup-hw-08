@@ -1,32 +1,58 @@
 .about-team {
-  padding: 94px 0 94px 0;
+
   background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 94px 0;
+  }
 }
+
 .title {
   @extend %title;
 }
+
 .team {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
+
 .team__list {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-right: 30px;
+
+  margin-bottom: 30px;
   border-radius: 0 0 4px 4px;
 
   background-color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+  }
 }
+
 .team__list:nth-child(4n) {
   margin-right: 0;
 }
+
 .team__card {
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-bottom: 24px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
+
 .team__worker {
   margin-bottom: 10px;
   font-weight: 500;
@@ -35,28 +61,38 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .team__proffesion {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $main-color;
+  color: var(--main-color);
   margin-bottom: 16px;
 }
+
 .social-sheet {
   @extend %social-sheet;
 }
+
+.social-sheet__item:not(:last-child) {
+  @extend %social-sheet__item;
+}
+
 .social-sheet__link {
   @extend %social-sheet__link;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
-    background-color: $accent-color;
+    background-color: var(--accent-color);
   }
 }
+
 .social-sheet__icons {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .social-sheet__link:hover &,
   .social-sheet__link:focus & {
     fill: #ffffff;

@@ -1,11 +1,47 @@
 .contacts {
-  padding: 60px 0 60px 0;
+
   background: #2f303a;
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0 60px 0;
+  }
 }
+
 .footer-content {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+
 }
+
+.footer {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+}
+
 .footer:not(:last-child) {
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+
+}
+
+.footer-wrapper {
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }

@@ -1,34 +1,106 @@
 .hero {
-  padding: 200px 0 200px 0;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../../images/hero.jpg");
+  max-width: 480px;
+  height: 400px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url("../../images/hero-mobile.WebP.webp");
   background-size: cover;
   background-position: center;
-  background-color: $title-color;
+  background-color: var(--title-color);
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../../images/hero-tablet.webp.webp");
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    max-width: 100vw;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../../images/hero-desctop.webp");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile-2x.webp.webp);
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-tablet-2x.webp.webp);
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-desctop-2x.webp);
+    }
+  }
 }
+
+.hero>.container {
+  padding: 118px 60px;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding: 118px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+
+}
+
 .hero__title {
-  width: 696px;
+  @media screen and (max-width: 477px) {
+    font-size: 22px;
+    line-height: 1.94;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
+
 .btn--top {
   @extend %btn;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .btn__text {
   display: block;
   font-weight: 700;

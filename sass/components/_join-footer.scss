@@ -7,15 +7,22 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
+
 .footer-form__email {
   display: inline-block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 11px;
+
+  margin-bottom: 20px;
 
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -23,7 +30,22 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #fff;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 8px;
+    width: 358px;
+  }
 }
+
 .footer-form__email::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -31,6 +53,16 @@
 
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-form__button {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width:1200px) {
+    display: inline-block;
+  }
+}
+
 .btn--footer {
   @extend %btn;
   display: inline-flex;
@@ -39,6 +71,7 @@
   padding: 0;
   margin: 0;
 }
+
 .btn__text--footer {
   @extend %btn__text;
   margin-right: 10px;

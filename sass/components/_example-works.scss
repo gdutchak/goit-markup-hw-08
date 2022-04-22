@@ -1,11 +1,27 @@
 .portfolio__types {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  @media screen and (min-width: 1200px) {
   margin: -15px;
+  }
 }
 .products {
-  width: 370px;
-  margin: 15px;
+  max-width: 450px;
+  &:not(:last-child){
+margin-bottom: 30px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+    margin: 15px;
+  }
 }
 .products__link {
   display: block;
@@ -62,11 +78,11 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: $title-color;
+  color: var(--title-color);
 }
 .products__type {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: $main-color;
+  color: var(--main-color);
 }

@@ -1,0 +1,117 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    padding: 48px 0 48px 40px;
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08),
+        0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+.btn-close-menu {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.nav-list-mobile__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.nav-list-mobile__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.communication-list-mobile__number {
+    margin-bottom: 32px;
+}
+
+.communication-list-mobile__link-number {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+.communication-list-mobile__mail {
+    margin-bottom: 64px;
+}
+
+.communication-list-mobile__link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--main-color);
+}
+
+.social-mobile {
+    display: flex;
+}
+
+.social-mobile__item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:last-child {
+        border-right: none;
+        padding-left: 10px;
+    }
+
+    &:not(:last-child) {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+.social-mobile__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
