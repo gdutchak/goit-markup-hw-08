@@ -8,6 +8,7 @@
   border: none;
   cursor: pointer;
 }
+
 %modal-form__icon {
   position: absolute;
   top: 50%;
@@ -25,13 +26,16 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
 %social-sheet {
   display: flex;
   justify-content: center;
 }
+
 %social-sheet__item {
   margin-right: 10px;
 }
+
 %social-sheet__link {
   display: flex;
   justify-content: center;
@@ -50,6 +54,7 @@
   text-align: center;
   color: #ffffff;
 }
+
 %visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,6 +65,7 @@
   border: 0;
   clip: rect(0 0 0 0);
 }
+
 %title {
   margin-bottom: 30px;
 
@@ -68,4 +74,10 @@
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

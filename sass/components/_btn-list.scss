@@ -10,41 +10,42 @@
 }
 
 .btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  min-height: 90px;
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: center;
-
     margin-bottom: 30px;
-  }
-}
-
-.btn-list__name {
-  @media screen and (max-width: 480px) {
-    display: inline-block;
-    white-space: normal;
-    margin-bottom: 15px;
-
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 0;
-    }
-
-    &:not(:nth-child(-n +3)) {
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 8px;
+    min-height: auto;
   }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+  }
+}
+
+.btn-list__name {
+  @media screen and (max-width: 399px) {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 400px) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }
 

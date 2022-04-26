@@ -37,15 +37,16 @@ img {
 .container {
   @media screen and (max-width: 767px) {
     max-width: 480px;
-    padding: 60px 15px;
   }
+
+  padding: 60px 15px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 60px 15px;
 
-    margin-left: auto;
-    margin-right: auto;
+
   }
 
   @media screen and (min-width: 1200px) {
