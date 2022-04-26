@@ -1476,6 +1476,12 @@ span {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .join-to-social {
+    text-align: start;
+  }
+}
+
 .social-sheet--actived {
   min-width: 206px;
 }
